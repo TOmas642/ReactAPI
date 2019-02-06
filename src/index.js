@@ -14,7 +14,7 @@ export default class App extends React.Component {
 
   getBeers() {
     fetch("https://api.punkapi.com/v2/beers")
-      .then(data => data.json()) // napojeni na predchozi funkci(fetch)
+      .then(data => data.json()) // napojeni na predchozi funkci(fetch), zretezeni navratovych hodnot
       .then(beers => {
         this.setState({ beers });
       })
